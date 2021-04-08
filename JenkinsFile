@@ -1,5 +1,5 @@
 
-// @Library('hx-RAT2-lib') _
+@Library('hx-RAT2-lib') _
 
 def BRANCH="master"
 def BUILD_SERVER='cit-build6'
@@ -13,7 +13,7 @@ stages{
         }
         steps{
             sh '''
-            sleep 20
+            sleep 2
             echo 'Hello'
             '''
             script{
