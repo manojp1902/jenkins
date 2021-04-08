@@ -1,0 +1,25 @@
+
+// @Library(hx-RAT2-lib) _
+
+def BRANCH="master"
+def BUILD_SERVER='cit-build6'
+def CYPRESS='/opt/git/workspace/RAT_2/Master-RAT_2'
+pipeline{
+agent none
+stages{
+    stage('Hello'){
+        agent{
+            label 'py3-agent'
+        }
+        steps{
+            sh '''
+            sleep 20
+            echo 'Hello'
+            '''
+        }
+
+    }
+}
+
+
+}
